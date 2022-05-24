@@ -1,4 +1,5 @@
 <html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"> <!-- For special character like Arabic letters -->
 
 <head>
 
@@ -10,15 +11,19 @@
 <body id="Color1">
     <div id="Color2" class="centerElement halfWidth">
         <div id="Color3" class="floatLeft halfWidth">
-            <h2 id="CountryName">Country Name Goes here!</h2>
-            <h2 id="OfficialLanguage">Official Language Goes here!</h2>
-            <h2 id="HelloWorld">Hello World Goes here!</h2>
+
+            <h2 id = countryInfo>Please select a country.</h2>
+
             <select id="CountryList">
-                <option value="USA">USA</option>
-                <option value="Mexico">Mexico</option>
                 <option value="Algeria">Algeria</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Mongolia">Mongolia</option>
+                <option value="USA">USA</option>
             </select>
+
             <button onclick="SwitchCountry()">Swap Country</button>
+
         </div>
     </div>
 

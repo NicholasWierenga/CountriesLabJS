@@ -4,29 +4,30 @@
     margin-left: auto;
 }
 
-.leftFloat{
-    float: left;
-}
-
 .halfWidth{
-     width: 50%;
+    width: 50%;
 }
 
-div{
+.floatLeft{
     border-style: solid;
-    border-width: 1px;
+    margin-top: -1px; /* I messed around this because divs being nested caused bordering to be weird
+    and I wanted a middle border.*/
+    border-right-width: 5px;
+    border-top-width: 1px; /* I don't know why 0px top-width messed things up, so I used margin to fix it. */
+    border-left-width: 0px;
+    border-bottom-width: 0px;
     border-color: black;
-    height: 700px;
+    height: 100%;
 }
 
-#Color1{
-    background-color: red;
+.centerElement{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    height: 98%; /* 98% because I think the 5px causes a scrollbar to appear at 100%. */
 }
 
-#Color2{
-    background-color: white;
-}
-
-#Color3{
-    background-color:blue;
+img{
+    width: 100%;
+    height: 35%;
 }
